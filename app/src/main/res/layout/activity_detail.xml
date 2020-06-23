@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/colorPeach"
+    tools:context=".DetailActivity">
+
+    <!--    <Button-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="25dp"-->
+    <!--        android:background="#E91E63"-->
+    <!--        android:text="@string/list"-->
+    <!--        android:textColor="@android:color/white"-->
+    <!--        android:textAllCaps="true"-->
+    <!--        />-->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_item_avatar"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="Name"
+        android:textColor="@android:color/black"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:maxLines="1"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_item_avatar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_item_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Username"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_name" />
+
+    <RelativeLayout
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_item_avatar"
+        app:layout_constraintVertical_bias="0.305">
+
+        <TextView
+            android:id="@+id/following"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="15dp"
+            android:text="following"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/followers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="163dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="44dp"
+            android:text="followers"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tv_item_following"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/following"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="42dp"
+            android:text="230"
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_item_followers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/followers"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="59dp"
+            android:text="900"
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.01">
+
+        <TextView
+            android:id="@+id/tv_item_repository"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="120dp"
+            android:text="119 "
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/repository"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="150dp"
+            android:text="Repository:  "
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_item_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="JL. Angkasa Pura"
+        android:textSize="20dp"
+        android:maxLines="2"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_company" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/repositories"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:text="119 repositories"-->
+<!--        android:textSize="20dp"-->
+<!--        android:maxLines="2"-->
+<!--        android:gravity="center"-->
+<!--        android:textColor="@android:color/black"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.498"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/detailCompany" />-->
+
+    <TextView
+        android:id="@+id/tv_item_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:textColor="@android:color/black"
+        android:text="Google, Inc"
+        android:textSize="20dp"
+        android:maxLines="2"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

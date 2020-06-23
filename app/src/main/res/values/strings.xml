@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GithubUserApp</string>
+    <string name="user_name">User Name</string>
+    <string name="detail">Detail</string>
+    <string name="detail_user">Detail User</string>
+    <string name="github_user">Github User\'s</string>
+</resources>
